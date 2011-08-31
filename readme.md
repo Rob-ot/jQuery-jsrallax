@@ -4,7 +4,7 @@ jsrallax
 Just relax, it's just parallax.
 
 ### What does it do?
-jsrallax allows you to make a parallax scene right it your HTML!
+jsrallax allows you to make a parallax scene right in your HTML!
 
 [Check out this example](http://middlerob.com/parallax/)
 
@@ -29,7 +29,7 @@ var scene = $(".parallax").jsrallax({
     // specify an element to capture mousemove events from (default is the element you selected)
     // mousemove:
 
-    // for full screen parallaxing you can give it window
+    // for fullscreen parallaxing you can give it window
     // mousemove: $(window),
     
     // if you don't want the mousemove event to be used just use false
@@ -46,7 +46,7 @@ var scene = $(".parallax").jsrallax({
 
 
     // here is where we specify the layers (required)
-    // order is important, the first layer specified will be the one in the back
+    // order is important, the first layer specified will be the one in the back unless you change z indexes
     layers: [
         // an array of objects like this
         {
@@ -76,7 +76,7 @@ var scene = $(".parallax").jsrallax({
     ]
 })
 
-// now we have 'scene', it is not a jquery object, it is a jarallax object, you can do the following with it:
+// now we have 'scene', it is not a jquery object, it is a jsrallax object, you can do the following with it:
 
 // move the scene, give it a x and y between -1 and 1
 // giving it -1, -1 is the same as moving the mouse to the top left of the scene, 0, 0 will center it
