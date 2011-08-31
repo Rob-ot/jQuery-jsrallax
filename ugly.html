@@ -1,21 +1,24 @@
-jsrallax
---------
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Parallax Cell</title>
+  <style>
+    .parallax {
+		border: 1px solid black;
+		height: 440px;
+		margin: 30px auto;
+		width: 880px;
+	}
+  </style>
+</head>
 
-Just relax, it's just parallax.
-
-### What does it do?
-jsrallax allows you to make a parallax scene right it your HTML!
-
-[Check out this example](http://middlerob.com/parallax/)
-
-
-### How do I make it do that?
-
-- Get some jQuery in your webpage
-- Include jquery.jsrallax.js
-- Make a parallax scene
-
-```javascript
+<body>
+  <div class="parallax"></div>
+  
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+  <script src='jquery.jsrallax.js'></script>
+  <script>
 // a bit of preparation for the demo
 var greenSquare = $("<div>").css({
     background: "lime",
@@ -83,6 +86,9 @@ var scene = $(".parallax").jsrallax({
 scene.move(0.5, -0.2)
 
 // you can also unbind the mousemove handler later if you want to
-// scene.mouseoff()
-```
-[View a live version of this](http://middlerob.com/parallax/ugly.html)
+//scene.mouseoff()
+
+    
+  </script>
+</body>
+</html>
