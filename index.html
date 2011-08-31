@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Parallax Cell</title>
+  <style>
+    .parallax {
+		border: 1px solid black;
+		height: 440px;
+		margin: 30px auto;
+		width: 880px;
+	}
+  </style>
+</head>
+
+<body>
+  <div class="parallax"></div>
+  
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+  <script src='jquery.jsrallax.js'></script>
+  <script>
+	var imgRoot = "test/img/"
+	
+	$(".parallax").jsrallax({
+		mousemove: $(window),
+		layers: [
+			{
+				elem: $("<img>", {src: imgRoot + "7.jpg"}).css({width:900, height:455}),
+				distance: -2,
+				left: "50%",
+				top: "50%"
+			},
+			{
+				elem: $("<img>", {src: imgRoot + "6.jpg"}).css({width:900, height:455}),
+				distance: -1,
+				left: "50%",
+				top: "50%"
+			},
+			{
+				elem: $("<img>", {src: imgRoot + "5.jpg"}).css({width:900, height:455}),
+				distance: 0.2,
+				left: "50%",
+				top: "50%"
+			},
+			{
+				elem: $("<img>", {src: imgRoot + "4.jpg"}).css({width:900, height:455}),
+				distance: 1,
+				left: "50%",
+				top: "50%"
+			},
+			{
+				elem: $("<img>", {src: imgRoot + "3.jpg"}).css({width:900, height:455}),
+				distance: 3,
+				left: "50%",
+				top: "50%"
+			},
+			{
+				elem: $("<img>", {src: imgRoot + "2.jpg"}).css({width:900, height:455}),
+				distance: 6,
+				left: "50%",
+				top: "50%"
+			},
+			{
+				elem: $("<img>", {src: imgRoot + "1.jpg"}).css({width:900, height:455}),
+				distance: 8,
+				left: "50%",
+				top: "50%"
+			}
+		]
+	})
+  </script>
+</body>
+</html>
